@@ -1,18 +1,94 @@
-# React + Vite
+# InnerBuild Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Portfolio personnel développé avec **React**, **Vite** et **Framer Motion**.
 
-Currently, two official plugins are available:
+Ce projet présente une landing page moderne orientée UI/UX avec plusieurs sections (hero, à propos, services, réalisations) et un design responsive.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Aperçu
 
-## React Compiler
+Le site inclut notamment :
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+- Une navigation ancrée par sections (`Home`, `About me`, `Services`, `Portfolio`, `My Resume`).
+- Une section Hero avec animation d’entrée (Framer Motion).
+- Une section de statistiques et de présentation du profil.
+- Une grille de services design.
+- Une galerie de projets/études de cas.
+- Un footer avec appel à l’action et email de contact.
 
-Note: This will impact Vite dev & build performances.
+## Stack technique
 
-## Expanding the ESLint configuration
+- **React 19**
+- **Vite 8**
+- **Framer Motion**
+- **ESLint 9**
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Prérequis
+
+- **Node.js** 18+ (recommandé : version LTS récente)
+- **npm**
+
+## Installation
+
+```bash
+npm install
+```
+
+## Lancer en développement
+
+```bash
+npm run dev
+```
+
+Puis ouvrir l’URL affichée dans le terminal (souvent `http://localhost:5173`).
+
+## Build de production
+
+```bash
+npm run build
+```
+
+Les fichiers compilés seront générés dans le dossier `dist/`.
+
+## Prévisualiser le build
+
+```bash
+npm run preview
+```
+
+## Lint
+
+```bash
+npm run lint
+```
+
+## Structure du projet
+
+```text
+.
+├── public/             # Assets statiques (images, icônes, favicon)
+├── src/
+│   ├── App.jsx         # Structure principale de la page
+│   ├── App.css         # Styles principaux
+│   ├── index.css       # Styles globaux
+│   └── main.jsx        # Point d’entrée React
+├── index.html
+├── vite.config.js
+└── package.json
+```
+
+## Personnalisation rapide
+
+- **Contenu** : modifier `src/App.jsx` (textes, sections, projets, liens).
+- **Style** : modifier `src/App.css` et `src/index.css`.
+- **Assets** : remplacer les images dans `public/`.
+
+## Scripts npm
+
+- `npm run dev` : lance le serveur de développement Vite.
+- `npm run build` : génère le build de production.
+- `npm run preview` : sert localement le build produit.
+- `npm run lint` : exécute les règles ESLint.
+
+---
+
+Si tu veux, je peux aussi te préparer une version de README orientée **freelance/client** (plus marketing) ou une version **développeur open-source** (plus technique et contribution).
